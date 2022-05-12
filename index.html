@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Channel</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-bar">
+        <img src="/assets/images/bar.svg" alt="" />
+        <img src="/assets/images/people.svg" alt="" />
+        <img src="/assets/images/fileEdit.svg" alt="" />
+        <img src="/assets/images/file.svg" alt="" />
+        <img src="/assets/images/location.svg" alt="" />
+        <img src="/assets/images/cal.svg" alt="" />
+        <img src="/assets/images/setting.svg" alt="" />
+        <img src="/assets/images/add.svg" alt="" />
+      </div>
+
+      <div class="container-wrapper">
+          
+        <header class="header">
+            <img class="logo" src="/assets/images/hubblerlogo.jpeg" alt="">
+          <div class="left-header">
+            <ul>
+              <li><img src="assets/images/home.png" alt="home" /></li>
+              <li class="active">Chanels</li>
+              <li>Groups</li>
+              <li>Events</li>
+              <li>Polls</li>
+            </ul>
+          </div>
+          <div class="right-header">
+            <div class="search-area">
+              <input type="text" placeholder="Global Search" />
+            </div>
+            <div class="header-profile">
+              <div class="bell-con">
+                <img src="assets/images/bell.png" alt="bell-icon" />
+              </div>
+              <div class="profile-image">
+                <img src="assets/images/profile.png" alt="profile" />
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="facebook-channel">
+          <div class="back-to-channel">
+            <p>
+              <img src="assets/images/left-arrow.png" />Back to all channels
+            </p>
+            <div class="about-event-wrapper">
+              <div class="about-event-head">
+                <p>About the event</p>
+                <img src="assets/images/next.png" />
+              </div>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+          <div class="channel-post">
+            <div class="channel-post-img">
+              <img src="assets/images/zespri.jpeg" alt="" />
+            </div>
+            <div class="post-img-header">
+              <div class="post-thumb-img">
+                <img src="assets/images/profile.png" alt="" />
+              </div>
+              <div class="post-thumb-content">
+                <h2>Always Look on the Bright side of life</h2>
+                <div class="button-wrap">
+                  <button type="button" class="edit">Edit</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab">
+              <button class="tablinks" onclick="openMenu(event, 'post')">
+                Post
+              </button>
+              <button
+                class="tablinks"
+                onclick="openMenu(event, 'about')"
+                id="defaultOpen"
+              >
+                About
+              </button>
+              <button class="tablinks" onclick="openMenu(event, 'phots')">
+                Phots
+              </button>
+              <button class="tablinks" onclick="openMenu(event, 'events')">
+                Events
+              </button>
+              <button class="tablinks" onclick="openMenu(event, 'polls')">
+                Polls
+              </button>
+              <button class="tablinks">Phots</button>
+            </div>
+
+            <div id="post" class="tabcontent">
+              <h3>Post</h3>
+              <p>This is the post</p>
+            </div>
+
+            <div id="about" class="tabcontent">
+              <div class="des">
+                <h3>Description</h3>
+                <p>
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem Ipsum.
+                </p>
+              </div>
+              <div class="des">
+                <h3>Tags</h3>
+                <ul>
+                  <li>Media</li>
+                  <li>Communications</li>
+                </ul>
+              </div>
+              <div class="channel-list">
+                <div class="channel-members">
+                  <div class="channel-member-head">
+                    <p>Members <span>12</span></p>
+                  </div>
+                  <ul>
+                    <li>
+                      <img src="assets/images/profile.png" alt="" />
+                      <div>
+                        <p>Name</p>
+                        <span>Admin</span>
+                      </div>
+                    </li>
+                    <li>
+                      <img src="assets/images/profile.png" alt="" />
+                      <div>
+                        <p>Balvir Bhadidar</p>
+                        <p class="memb-pos">Sales Director</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="channel-member-foot">
+                    <p><span>+7</span> more</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="music">
+                <ul>
+                  <li>
+                    Music <span>8 Oct 2018</span>
+                    <p>Channer name updated</p>
+                  </li>
+                  <li>
+                    Music <span>8 Oct 2018</span>
+                    <p>Channer name updated</p>
+                  </li>
+                </ul>
+                <button type="button" class="edit-channel-info">
+                  <img src="assets/images/pencil.png" />Edit Channel Info
+                </button>
+              </div>
+            </div>
+
+            <div id="phots" class="tabcontent">
+              <h3>About</h3>
+              <p>This is the about</p>
+            </div>
+            <div id="events" class="tabcontent">
+              <h3>events</h3>
+              <p>This is the events</p>
+            </div>
+            <div id="polls" class="tabcontent">
+              <h3>polls</h3>
+              <p>This is the polls</p>
+            </div>
+          </div>
+          <div class="channel-list">
+            <div class="channel-members">
+              <div class="channel-member-head">
+                <p>Members <span>12</span></p>
+                <img src="assets/images/next.png" />
+              </div>
+              <ul>
+                <li>
+                  <img src="assets/images/profile.png" alt="" />
+                  <p>Name</p>
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <img src="assets/images/profile.png" alt="" />
+                  <div>
+                    <p>Balvir Bhadidar</p>
+                    <p class="memb-pos">Sales Director</p>
+                  </div>
+
+                  <span>Admin</span>
+                </li>
+                <li>
+                  <img src="assets/images/profile.png" alt="" />
+                  <div>
+                    <p>Debashis Bhuiyan</p>
+                    <p class="memb-pos">HR Specialist</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/images/profile.png" alt="" />
+                  <div>
+                    <p>Dusana Samnov</p>
+                    <p class="memb-pos">Customer Service Reprsentative</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="assets/images/profile.png" alt="" />
+                  <div>
+                    <p>Farhad Tarkoh</p>
+                    <p class="memb-pos">Export Manager</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="channel-member-foot">
+                <p><span>+7</span> more</p>
+              </div>
+            </div>
+            <div class="channel-members">
+              <div class="channel-member-head">
+                <p>Upcoming Events</p>
+                <img src="assets/images/next.png" />
+              </div>
+              <div class="upcoming-events-content">
+                <img src="assets/images/zespri.jpeg" alt="" />
+                <p>THU 27 JUL - 30JUL</p>
+                <h3>Press Meet 2018</h3>
+                <p>Hotel Utach Sallon, Sent Fransico, California</p>
+                <div class="events-going">
+                  <p><span>8</span> Peoples are going</p>
+                  <a href="#">You are going</a>
+                </div>
+              </div>
+            </div>
+            <div class="channel-members activies">
+              <div class="channel-member-head">
+                <p>Recent Activities</p>
+                <img src="assets/images/next.png" />
+              </div>
+              <ul>
+                <li>you gave Debashis admin now<span>5m ago</span></li>
+                <li>you gave Balveer admin now<span>5m ago</span></li>
+                <li>you created this channel<span>yesterday</span></li>
+              </ul>
+              <div class="channel-member-foot">
+                <p>View all</p>
+              </div>
+            </div>
+          </div>
+          <div class="fixed-rightbar">
+            <ul>
+              <li>
+                <img src="assets/images/home.png" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/home.png" alt="" />
+              </li>
+              <li>
+                <img src="assets/images/home.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
